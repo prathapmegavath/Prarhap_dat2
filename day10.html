@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <details>
+        <summary>What is html?</summary>
+        <p>HTML, or HyperText Markup Language, is the standard language used to create and structure content on the web. It consists of a series of elements or "tags" that define various parts of a webpage, such as headings, paragraphs, links, images, and other multimedia.</p>
+    </details>
+    <details>
+        <summary>Why do we use html?</summary>
+        <p>HTML is used to create and organize content on the web. It helps structure text, links, images, and other elements so browsers can display them correctly. It’s essential for making websites accessible, improving search visibility, and working with styles and interactivity.</p>
+    </details>
+    <details>
+        <summary>What is doctype in html?
+        </summary>
+        <p>The <!DOCTYPE> declaration in HTML is used to specify the version of HTML that the document is using. It tells the web browser how to render the page correctly.</p>
+    </details>
+    <details>
+        <summary>What is the root element of html?
+        </summary>
+        <p>The root element of an HTML document is the <html> tag. It encompasses all the content of the webpage and serves as the main container for everything in the document.</p>
+    </details>
+    <details>
+        <summary>What is a tag?
+        </summary>
+        <p>A tag in HTML is a special markup element used to define and structure content on a webpage. Tags are usually enclosed in angle brackets, like this: <tagname>. Most tags come in pairs: an opening tag (e.g., <p>) and a closing tag (e.g., </p>), with the content in between</p>
+    </details>
+    <details>
+        <summary>Give me a few examples of self-closing tags?
+        </summary>
+        <p>Here are a few examples of self-closing tags in HTML:
+
+            Image: <img src="image.jpg" alt="Description">
+            Line Break: <br>
+            Horizontal Rule: <hr>
+            Meta Tag: <meta charset="UTF-8">
+            Link Tag: <link rel="stylesheet" href="styles.css">
+            These tags don't need a closing tag; they stand alone.
+            
+            
+            
+            </p>
+    </details>
+    <details>
+        <summaryWhat is an element?></summary>
+        <p>An element in HTML is a combination of a start tag, content, and an end tag. It represents a specific part of the webpage, such as a paragraph, heading, or image.
+
+            For example, in this paragraph element:<p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </p>
+    </details>
+    <details>
+        <summary>How many types of elements are there in html?
+        </summary>
+        <p>
+            HTML elements can be grouped into a few main types:
+            
+            Block Elements: Take up the full width and start on a new line. Examples:
+            
+            <div>
+            <p>
+            <h1>, <h2>, etc.
+            Inline Elements: Do not start on a new line and take only the space they need. Examples:
+            
+            <span>
+            <a>
+            <strong>
+            Self-Closing Elements: Do not have a closing tag. Examples:
+            
+            <img>
+            <br>
+            <hr>
+            Form Elements: Used for creating forms. Examples:
+            
+            <input>
+            <button>
+            <select>
+            These types help organize and display content on a webpage.</p>
+    </details>
+    <details>
+        <summary> What is d/f b/w the inline vs block elements?
+        </summary>
+        <p>Block Elements start on a new line and take up the full width (e.g., <div>, <p>).
+            Inline Elements do not start on a new line and only take up the space they need (e.g., <span>, <a>).
+            In summary, block elements stack vertically, while inline elements flow within text.</p>
+    </details>
+    <details>
+        <summary> What is d/f b/w the semantic elements and non-semantic elements?
+        </summary>
+        <p>Semantic elements clearly convey meaning and structure (e.g., <header>, <article>), improving accessibility and SEO. Non-semantic elements lack meaningful context (e.g., <div>, <span>), primarily serving layout purposes. Using semantic elements is generally recommended for better content clarity.</p>
+    </details>
+    <details>
+        <summary> What are href vs src attributes?
+        </summary>
+        <p>The href attribute specifies the URL for linked resources, commonly used in <a> tags for hyperlinks. The src attribute specifies the URL for embedded resources, such as images in <img> tags or scripts in <script>. Essentially, href is for linking, while src is for embedding.</p>
+    </details>
+    <details>
+        <summary>What are the features of html 5?
+        </summary>
+        <p>
+HTML5 includes several important features:
+
+Semantic Elements: New tags like <header> and <footer> make it easier to understand the structure of a webpage.
+Multimedia Support: You can add audio and video directly without needing plugins.
+Canvas: A <canvas> element allows for drawing graphics and animations.
+Improved Forms: New input types (like date and email) make forms easier to use.
+Local Storage: You can store data in the browser for offline access.
+Geolocation: It can access the user’s location.
+Responsive Design: It helps create websites that look good on all devices.
+These features make web development easier and more powerful!</p>
+    </details>
+    <details>
+        <summary>    What are entities in html?
+        </summary>
+        <p>In HTML, entities are special codes used to represent characters that have specific meanings or are not easily typed. They ensure that the browser correctly interprets these characters. Here are the main types:
+
+Character Entities: Represent special characters, such as:
+
+&amp; for & (ampersand)
+&lt; for < (less than)
+&gt; for > (greater than)
+&quot; for " (double quote)
+&apos; for ' (single quote)
+Numeric Entities: Represent characters using their Unicode or ASCII values, such as:
+
+&#169; for © (copyright symbol)
+&#x1F600; for 😀 (grinning face emoji)
+Entities are useful for ensuring that special characters are displayed correctly without interfering with HTML syntax</p>
+    </details>
+    <details>
+        <summary>  What is div vs span?
+        </summary>
+        <p><div> and <span> are used to group content, but they have different roles:
+
+<div>
+Block-Level: Creates a new section that takes up the full width and starts on a new line.
+Use: Great for larger areas, like sections of a webpage.
+<span>
+Inline: Stays in the same line as the text around it and only takes up as much space as needed.
+Use: Good for styling small bits of text within a paragraph.
+In short, use <div> for big sections and <span> for small pieces of text!</p>
+    </details>
+    <details>
+        <summary>What are list tags in html?
+        </summary>
+        <p>HTML offers several list tags to organize content in a structured way:
+
+Ordered List (<ol>):
+
+Used for lists where the order matters.
+Items are numbered automatically.
+Example:
+html
+Copy code
+<ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+Unordered List (<ul>):
+
+Used for lists where the order does not matter.
+Items are marked with bullets.
+Example:
+html
+Copy code
+<ul>
+    <li>Item one</li>
+    <li>Item two</li>
+    <li>Item three</li>
+</ul>
+Definition List (<dl>):
+
+Used for lists of terms and their definitions.
+Contains <dt> (definition term) and <dd> (definition description).
+Example:
+html
+Copy code
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+These list tags help organize information clearly and semantically in web content.</p>
+    </details>
+    <details>
+        <summary>What are attributes?
+        </summary>
+        <p>Attributes in HTML provide extra information about an element. They are added to the opening tag and have a name and a value.
+
+Key Points:
+Format: Written as name="value" in the tag.
+Common Examples:
+class: For CSS styling.
+id: A unique identifier for an element.
+href: The link URL (for <a> tags).
+src: The source for images (in <img> tags).
+Example:
+html
+Copy code
+<a href="https://example.com">Visit Example</a>
+<img src="image.jpg" alt="Image description">
+Attributes help customize how elements behave and look!</p>
+    </details>
+    <details>
+        <summary>mention a few attributes for img tags?
+        </summary>
+        <p>Here are a few important attributes for the <img> tag in HTML:
+
+src: Specifies the URL of the image.
+
+Example: <img src="image.jpg">
+alt: Provides alternative text for the image, useful for accessibility.
+
+Example: <img src="image.jpg" alt="Description of the image">
+width: Sets the width of the image in pixels or percentage.
+
+Example: <img src="image.jpg" width="300">
+height: Sets the height of the image in pixels or percentage.
+
+Example: <img src="image.jpg" height="200">
+title: Offers additional information about the image, often displayed as a tooltip.
+
+Example: <img src="image.jpg" title="This is an image">
+These attributes help control the display and accessibility of images on a webpage!</p>
+    </details>
+    <details>
+        <summary>What is t head on the table?
+        </summary>
+        <p>It seems like you might be referring to "the head" of the table, which typically means the seat or position at the end of a table, often considered the most important spot. Is that what you meant, or are you asking about something specific on a table?</p>
+    </details>
+    <details>
+        <summary>What is tr?
+    What is th?
+    What is td?</summary>
+        <p>
+In HTML, these are elements used to define tables:
+
+<tr>: This tag stands for "table row." It is used to group a set of table cells within a table.
+
+<th>: This stands for "table header." It defines a header cell in a table, typically used to represent headings for columns or rows. By default, text in <th> elements is bold and centered.
+
+<td>: This stands for "table data." It is used to define a standard cell in a table that holds data.</p>
+    </details>
+    <details>
+        <summary>Can I use th in t body?
+        </summary>
+        <p>Yes, you can use <th> elements inside a <tbody> in HTML. While <th> is typically used in table headers (within <thead>), it can also be used in a body section to indicate that certain cells are headers for a specific set of data, especially in the context of complex tables.</p>
+    </details>
+    <details>
+        <summary> What are meta tags?What is seo?
+        </summary>
+        <p>Meta Tags
+Meta tags are pieces of information in the HTML of a webpage that help search engines and browsers understand the content. They go in the <head> section and include:
+
+Description: A summary of the page (shown in search results).
+Keywords: Relevant keywords for the page (less important today).
+Viewport: Controls how the page looks on different devices.
+SEO (Search Engine Optimization)
+SEO is the process of improving a website so it appears higher in search engine results. Key points include:
+
+Keywords: Using terms people search for.
+On-Page SEO: Optimizing content and structure on your pages.
+Off-Page SEO: Getting links from other websites.
+Technical SEO: Making sure your site is fast and easy to navigate.
+Good SEO helps attract more visitors to your site.</p>
+    </details>
+    <details>
+        <summary>  what is attr of the html tag?
+        </summary>
+        <p>In HTML, **attributes** provide extra information about elements. They are added to the opening tag and usually have a name and a value. Here are some common attributes:
+
+1. **`id`**: Uniquely identifies an element.
+   ```html
+   <div id="header">Header</div>
+   ```
+
+2. **`class`**: Groups elements for styling.
+   ```html
+   <p class="highlight">Highlighted text</p>
+   ```
+
+3. **`style`**: Applies specific styles directly.
+   ```html
+   <h1 style="color: blue;">Blue Heading</h1>
+   ```
+
+4. **`src`**: Specifies the source for images.
+   ```html
+   <img src="image.jpg" alt="Description of image">
+   ```
+
+5. **`href`**: Links to another webpage.
+   ```html
+   <a href="https://example.com">Visit Example</a>
+   ```
+
+Attributes help define how elements behave and are displayed.</p>
+    </details>
+    <details>
+        <summary>What is an iframe and anchor?</summary>
+        <p>### `<iframe>`
+
+An `<iframe>` (inline frame) is an HTML element that allows you to embed another HTML document within the current page. It's commonly used to display content like videos, maps, or other websites. Here's an example:
+
+```html
+<iframe src="https://www.example.com" width="600" height="400"></iframe>
+```
+
+### `<a>`
+
+An `<a>` tag is used to create hyperlinks in HTML. It allows users to click and navigate to another webpage or resource. The `href` attribute specifies the destination URL. Here's an example:
+
+```html
+<a href="https://www.example.com">Visit Example</a>
+```
+
+### Summary
+
+- **`<iframe>`**: Embeds another webpage within your page.
+- **`<a>`**: Creates a clickable link to another page or resource.</p>
+    </details>
+    <details>
+        <summary> What is git vs github?
+        </summary>
+        <p>### Git
+
+- **What it is**: Git is a version control system that allows developers to track changes in code over time.
+- **Functionality**: It helps manage project files, enabling multiple people to collaborate without overwriting each other’s work. Git allows you to create branches, commit changes, and revert to previous versions.
+- **Usage**: Git is installed on your local machine and can be used independently of any online service.
+
+### GitHub
+
+- **What it is**: GitHub is a web-based platform that uses Git for version control but adds additional features for collaboration and sharing.
+- **Functionality**: It provides a place to host Git repositories online, making it easy to share code with others, contribute to projects, and manage issues and pull requests.
+- **Usage**: GitHub offers social features like followers, stars, and comments, making it a community hub for developers.
+
+### Summary
+
+- **Git**: A version control tool used locally for managing code changes.
+- **GitHub**: An online platform that hosts Git repositories and provides collaborative features.</p>
+    </details>
+    <details>
+        <summary>  What is the workflow of github?
+        </summary>
+        <p>### Simple GitHub Workflow
+
+1. **Create a Repository**: Start a new project on GitHub.
+
+2. **Clone the Repository**: Copy it to your local machine.
+   ```bash
+   git clone https://github.com/username/repository.git
+   ```
+
+3. **Create a Branch**: Make a new branch for your work.
+   ```bash
+   git checkout -b feature-branch
+   ```
+
+4. **Make Changes**: Edit files or add new content.
+
+5. **Stage Changes**: Prepare your changes for committing.
+   ```bash
+   git add .
+   ```
+
+6. **Commit Changes**: Save your changes with a message.
+   ```bash
+   git commit -m "Description of changes"
+   ```
+
+7. **Push Changes**: Upload your branch to GitHub.
+   ```bash
+   git push origin feature-branch
+   ```
+
+8. **Create a Pull Request (PR)**: Propose merging your changes into the main branch on GitHub.
+
+9. **Review and Merge**: Collaborators review your PR, and once approved, it's merged.
+
+10. **Delete the Branch**: Clean up by deleting your feature branch.
+
+11. **Pull Updates**: Regularly get the latest changes from the main branch.
+   ```bash
+   git pull origin main
+   ```
+
+This workflow helps keep projects organized and collaborative!</p>
+    </details>
+    <details>
+        <summary>What command do we need to use to move the changes to staged changes?
+        </summary>
+        <p>To move changes to staged changes in Git, you use the command:
+
+```bash
+git add <file>
+```
+
+or to stage all changes at once, you can use:
+
+```bash
+git add .
+```
+
+### Explanation:
+- **`git add <file>`**: Stages a specific file for the next commit.
+- **`git add .`**: Stages all modified and new files in the current directory.
+
+Once you've staged your changes, you can then commit them with `git commit`.</p>
+    </details>
+    <details>
+        <summary>How can you stage all files at a time?
+        </summary>
+        <p>To stage all files at once in Git, you can use the following command:
+
+```bash
+git add .
+```
+
+### Explanation:
+- **`.`**: This dot represents the current directory, so this command stages all modified, new, and deleted files in that directory and its subdirectories.
+
+Alternatively, you can also use:
+
+```bash
+git add -A
+```
+
+### Explanation:
+- **`-A`**: This option stages all changes, including new, modified, and deleted files across the entire repository.
+
+After staging, you can commit your changes using `git commit`.</p>
+    </details>
+<detail>
+    <summary>What is the git push command and use of it?
+    </summary>
+    <p>The `git push` command is used to send your local changes to a remote repository (like GitHub).
+
+### Basic Command
+
+```bash
+git push origin <branch-name>
+```
+
+### Key Points
+
+- **`origin`**: The default name for your remote repository.
+- **`<branch-name>`**: The name of the branch you want to push, like `main` or `feature-branch`.
+
+### Common Uses
+
+1. **Upload Changes**: Share your local commits with others.
+2. **Collaborate**: Keep the remote repository updated with your latest work.
+
+### Example
+
+To push changes from your local `main` branch:
+
+```bash
+git push origin main
+```
+
+For the first push of a new branch, you can use:
+
+```bash
+git push -u origin <branch-name>
+```
+
+This sets up tracking for future pushes.</p>
+    </detail>
+    <detail>
+    <summary>What is git commit command usage?</summary>
+    <p>The `git commit` command is used to save your changes to the local repository. When you commit, you're creating a snapshot of your changes along with a message describing what you've done. Here’s how to use it:
+
+### Basic Syntax
+```bash
+git commit -m "Your commit message"
+```
+
+### Key Options
+
+- `-m "message"`: This option allows you to provide a commit message directly in the command line.
+- `-a`: Automatically stage files that have been modified and deleted, skipping the need for `git add`.
+- `--amend`: Modify the most recent commit, adding changes or changing the commit message.
+- `-v`: Show the diff of changes in the commit message editor.
+- `--dry-run`: Show what would be committed without actually making the commit.
+
+### Example Usage
+1. **Stage your changes**:
+   ```bash
+   git add .
+   ```
+2. **Commit the changes**:
+   ```bash
+   git commit -m "Fix bug in user authentication"
+   ```
+
+### Good Practices
+- Write clear and concise commit messages that describe the changes made.
+- Use the present tense (e.g., "Fix bug" instead of "Fixed bug").
+
+This helps keep your project history organized and understandable!</p>
+    </detail>
+    <detail>
+    <summary>  What is the use of the git init command?
+    </summary>
+    <p>Sure! The `git init` command is used to create a new Git repository. Here’s a simple breakdown:
+
+### Usage
+```bash
+git init
+```
+
+### Purpose
+- **Start a New Project**: Creates a new Git repository in your current folder.
+- **Turn an Existing Project into Git**: Adds version control to an existing project.
+
+### Steps
+1. Navigate to your project folder.
+2. Run `git init`.
+3. Add files with `git add`.
+4. Commit changes with `git commit`.
+
+That’s it! You’re ready to track changes in your project.</p>
+    </detail>
+    <detail>
+    <summary>  What are formatting tags?
+    </summary>
+    <p>Formatting tags are HTML elements used to style and organize text on a web page. Here are some key ones:
+
+### Common Formatting Tags
+
+- **`<strong>`**: Bold text (important).
+- **`<em>`**: Italic text (emphasis).
+- **`<b>`**: Bold text (less emphasis).
+- **`<i>`**: Italic text (less emphasis).
+- **`<u>`**: Underlined text.
+- **`<p>`**: Paragraph.
+- **`<h1>` to `<h6>`**: Headings (from most to least important).
+
+### Example
+```html
+<p>This is <strong>bold</strong> and <em>italic</em> text.</p>
+```
+
+### Summary
+Formatting tags help make text more readable and visually appealing on web pages.</p>
+    </detail>
+    <detail>
+    <summary>   What are input tag attrS?
+    </summary>
+    <p>The `<input>` tag in HTML is used to create various types of user input fields in forms. It has several attributes (often referred to as "attrS") that define its behavior and appearance. Here are some common attributes:
+
+### Common Input Tag Attributes
+
+- **`type`**: Specifies the type of input (e.g., `text`, `password`, `email`, `checkbox`, `radio`, `submit`, etc.).
+  
+- **`name`**: Assigns a name to the input field, which is used to identify the field when the form is submitted.
+
+- **`value`**: Sets the initial value of the input field.
+
+- **`placeholder`**: Provides a hint to the user about what to enter in the field (displayed as grayed-out text).
+
+- **`required`**: Indicates that the input field must be filled out before submitting the form.
+
+- **`maxlength`**: Sets the maximum number of characters that can be entered in the field.
+
+- **`min`** and **`max`**: Specifies the minimum and maximum values for numeric input types.
+
+- **`checked`**: For checkboxes and radio buttons, this attribute indicates whether the input is checked by default.
+
+- **`disabled`**: Disables the input field, making it uneditable and unselectable.
+
+- **`readonly`**: Makes the input field read-only, preventing user modifications while still allowing it to be submitted.
+
+### Example
+```html
+<form>
+  <input type="text" name="username" placeholder="Enter your username" required>
+  <input type="password" name="password" placeholder="Enter your password" required>
+  <input type="submit" value="Submit">
+</form>
+```
+
+### Summary
+The `<input>` tag has various attributes that control its behavior and appearance, making it versatile for user input in forms.</p>
+    </detail>
+    <detail>
+    <summary>What r form attributes?
+    </summary>
+    <p>Form attributes are used in HTML to control how a `<form>` works. Here are the key ones:
+
+### Common Form Attributes
+
+- **`action`**: URL where the form data is sent.
+- **`method`**: How to send data (e.g., `GET` or `POST`).
+- **`enctype`**: How the data is encoded (important for file uploads).
+- **`target`**: Where to display the response (e.g., same tab or new tab).
+- **`name`**: Name of the form, used for scripts.
+- **`id`**: Unique identifier for the form.
+- **`autocomplete`**: Controls browser autocomplete (on or off).
+- **`novalidate`**: Turns off browser validation.
+
+### Example
+```html
+<form action="/submit" method="POST">
+  <input type="text" name="username" required>
+  <input type="submit" value="Submit">
+</form>
+```
+
+### Summary
+Form attributes define how the form behaves and where the data goes when submitted.</p>
+    </detail>
+    <detail>
+    <summary>What is a marquee tag?
+    </summary>
+    <p>The `<marquee>` tag in HTML is used to create scrolling text or images across the screen. This tag allows content to move horizontally or vertically, giving a dynamic effect to the webpage. However, it's important to note that the `<marquee>` tag is deprecated and not recommended for use in modern web development.
+
+### Basic Syntax
+```html
+<marquee>Scrolling text goes here!</marquee>
+```
+
+### Attributes
+You can customize the behavior of the marquee with various attributes:
+
+- **`direction`**: Sets the scrolling direction (e.g., `left`, `right`, `up`, `down`).
+- **`scrollamount`**: Controls the speed of the scrolling (default is 6).
+- **`scrolldelay`**: Sets the delay between each scroll movement (default is 85).
+- **`loop`**: Specifies how many times the marquee will loop (default is infinite).
+- **`bgcolor`**: Sets the background color of the marquee.
+
+### Example
+```html
+<marquee direction="left" scrollamount="5">Welcome to our website!</marquee>
+```
+
+### Summary
+While the `<marquee>` tag can create eye-catching effects, it's best to use CSS animations or JavaScript for similar effects in modern web design, as the `<marquee>` tag is not supported in HTML5.</p>
+    </detail>
+    <detail>
+    <summary>What is the marquee tag attrS?
+    </summary>
+    <p>The `<marquee>` tag has several attributes that control its behavior and appearance. Here are the key attributes:
+
+### Common Marquee Attributes
+
+- **`direction`**: Specifies the direction of the scrolling text. Possible values:
+  - `left`: Scrolls text from right to left.
+  - `right`: Scrolls text from left to right.
+  - `up`: Scrolls text from bottom to top.
+  - `down`: Scrolls text from top to bottom.
+
+- **`scrollamount`**: Sets the speed of the scrolling. Higher values make the text scroll faster.
+
+- **`scrolldelay`**: Defines the delay between each scroll movement, in milliseconds. A higher value results in slower scrolling.
+
+- **`loop`**: Determines how many times the marquee will scroll. Use `infinite` for endless scrolling.
+
+- **`bgcolor`**: Sets the background color of the marquee area.
+
+- **`width`**: Specifies the width of the marquee. Can be set in pixels or as a percentage.
+
+- **`height`**: Specifies the height of the marquee.
+
+- **`hspace`**: Sets horizontal spacing around the marquee.
+
+- **`vspace`**: Sets vertical spacing around the marquee.
+
+### Example
+```html
+<marquee 
+    direction="left" 
+    scrollamount="10" 
+    scrolldelay="100" 
+    loop="infinite" 
+    bgcolor="#f0f0f0">
+    Welcome to our website!
+</marquee>
+```
+
+### Summary
+The `<marquee>` tag allows for various attributes to control the scrolling behavior and appearance, but keep in mind that it is deprecated in HTML5, and using CSS or JavaScript is recommended for similar effects.</p>
+    </detail>
+    <detail>
+    <summary>   What are multimedia tags?
+    </summary>
+    <p>Multimedia tags in HTML are used to embed different types of media on web pages. Here are the main ones:
+
+### Common Multimedia Tags
+
+1. **`<img>`**: Embeds images.
+   ```html
+   <img src="image.jpg" alt="Description">
+   ```
+
+2. **`<audio>`**: Embeds audio files.
+   ```html
+   <audio controls>
+     <source src="audio.mp3" type="audio/mpeg">
+   </audio>
+   ```
+
+3. **`<video>`**: Embeds video files.
+   ```html
+   <video width="320" height="240" controls>
+     <source src="video.mp4" type="video/mp4">
+   </video>
+   ```
+
+4. **`<iframe>`**: Embeds another webpage (like a video or map).
+   ```html
+   <iframe src="https://www.example.com" width="300" height="200"></iframe>
+   ```
+
+5. **`<canvas>`**: A space for drawing graphics with JavaScript.
+   ```html
+   <canvas id="myCanvas" width="200" height="100"></canvas>
+   ```
+
+### Summary
+These tags help you add images, audio, video, and interactive content to your web pages, making them more engaging.</p>
+    </detail>
+    <detail>
+    <summary> Can we use block elements in inline elements?
+    </summary>
+    <p>In HTML, it's generally not recommended to place block-level elements inside inline elements. Doing so can lead to unexpected behavior and rendering issues across different browsers. Here's a brief overview:
+
+### Block Elements
+- Block elements (e.g., `<div>`, `<p>`, `<h1>`, `<ul>`) typically start on a new line and take up the full width available.
+  
+### Inline Elements
+- Inline elements (e.g., `<span>`, `<a>`, `<strong>`, `<img>`) do not start on a new line and only take up as much width as necessary.
+
+### Common Practice
+- You should place inline elements within block elements, but placing block elements inside inline elements is not valid HTML and can cause issues.
+
+### Example of Valid Structure
+```html
+<div>
+  <p>This is a paragraph with <span>inline text</span>.</p>
+</div>
+```
+
+### Example of Invalid Structure
+```html
+<span>
+  <div>This is a block element inside an inline element.</div> <!-- Not recommended -->
+</span>
+```
+
+### Summary
+While technically some browsers might render block elements inside inline elements, it's not standard practice. Stick to placing inline elements inside block elements for proper structure and compatibility.</p>
+    </detail>
+    <detail>
+    <summary>   What are d/f b/ abs vs real paths?
+    </summary>
+    <p>Sure! Here’s a simple explanation of absolute paths and relative paths:
+
+### Absolute Paths
+- **Definition**: A complete path from the root of the file system to a specific file or folder.
+- **Example**: 
+  - **Windows**: `C:\Users\Username\Documents\file.txt`
+  - **Linux/Unix**: `/home/username/documents/file.txt`
+- **Note**: Always points to the same location.
+
+### Relative Paths
+- **Definition**: A path that starts from the current directory you are in.
+- **Example**: 
+  - If you are in `/home/username`, a relative path to a file in `documents` would be `documents/file.txt`.
+- **Note**: Changes based on where you are in the file system.
+
+### Summary
+- **Absolute Path**: Full path from the root.
+- **Relative Path**: Path based on your current location.</p>
+    </detail>
+    <detail>
+    <summary>What are summary and details tags?
+    </summary>
+    <p>Sure! Here’s a simple explanation of the `<summary>` and `<details>` tags:
+
+### `<details>` Tag
+- **What it does**: Creates a section that can be expanded or collapsed.
+- **Example**:
+  ```html
+  <details>
+    <summary>What tag is helpful to give the reviews ?
+    </summary>
+    <p>This content is hidden until you click.</p>
+  </details>
+  ```
+
+### `<summary>` Tag
+- **What it does**: Acts as a title or label for the hidden content in the `<details>` tag. It’s always visible.
+- **Usage**: Placed inside `<details>`.
+
+### Summary
+- **`<details>`**: Collapsible section.
+- **`<summary>`**: Clickable title for that section.
+
+These tags help keep web pages organized and interactive!</p>
+    </detail>
+    <detail>
+    <summary></summary>
+    <p>The `<blockquote>` tag is often used to present reviews or testimonials in HTML. It is specifically designed for displaying quoted text, which makes it suitable for highlighting reviews. Here’s how it works:
+
+### `<blockquote>` Tag
+- **Purpose**: Indicates that the enclosed text is a quotation from another source.
+- **Usage**:
+  ```html
+  <blockquote>
+    <p>"This product changed my life! Highly recommended!"</p>
+    <footer>- Jane Doe, Happy Customer</footer>
+  </blockquote>
+  ```
+
+### Other Options
+- **`<cite>`**: Can be used to reference the source of the review.
+- **`<p>`**: Simple paragraphs can also be used for reviews if you want a more straightforward presentation.
+
+### Summary
+The `<blockquote>` tag is effective for displaying reviews, providing a clear visual separation and emphasizing the quoted text.</p>
+    </detail>
+    <detail>
+    <summary>   fieldset and legend tag?</summary>
+    <p>### `<fieldset>` Tag
+- **Definition**: A tag used to group related form elements together in a form.
+  
+### `<legend>` Tag
+- **Definition**: A tag used to provide a title or caption for a `<fieldset>`, describing the group of form elements.
+
+### Summary
+- **`<fieldset>`**: Groups form elements.
+- **`<legend>`**: Labels the group.</p>
+    </detail>
+     </body>
+</html>
